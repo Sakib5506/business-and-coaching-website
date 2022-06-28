@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+body{
+    overflow-x: hidden;
+}
+/* Header-area */
+.nav-link:hover{
+    border-bottom: 3px solid black;   
+}
+
+
+.header-logo{
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    left: -1.3em;
+}
+.hero-right{
+    position: relative;
+}
+.hero-2{
+    position: absolute;
+    left: 5%;
+    bottom: 8%;
+}
+.hero-3{
+    position: absolute;
+    left: 17%;
+    z-index: -1;
+    top: 2%;
+}
+/* Services-area */
+.services-left{
+    position: relative;
+}
+.services-img-2{
+    position: absolute;
+    left: 2%;
+    z-index: -1;
+}
+/* Review-area */
+.review-container{
+    position: relative;   
+}
+.review-bg-top{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.review-bg-bottom{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+/* Footer-area */
+.footer-area{
+    background-color: #010133;
+    color: whitesmoke;
+}
+.second-row a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 1rem;
+}
+.second-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+.footer-img-left{
+    max-width: 60%;
+}
+
+/* Media Quary */
+@media only screen and (min-width: 768px) {
+    .hero-3{
+        max-width: 30%;
+        left: 7%;
+    }
+    .hero-2{
+        max-width: 45%;
+        left: 0%;
+    }
+    .services-img-2{
+        max-width: 30%;
+        left: 5%;
+    }
+    .review-container{
+        padding: 3rem;
+    }
+    
+}
+@media only screen and (min-width: 992px) {
+    .review-container{
+        padding: 7rem;
+    }
+}
+/* @media only screen and (min-width: 1200px) and (max-width: 1400px) { 
+    .hero-3{
+        left: 5%;
+    }
+} */
+@media only screen and (min-width: 1400px) {
+    .hero-3{
+        left: 17%;
+    }
+}
